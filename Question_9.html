@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a9dbe0; /* Light blue background */
+        }
+        .calculator {
+            background-color: #ffffff; /* White calculator body */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .display {
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+        .buttons button {
+            padding: 20px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .buttons button:nth-child(4),
+        .buttons button:nth-child(8),
+        .buttons button:nth-child(12),
+        .buttons button:nth-child(16) {
+            background-color: #ffa500; /* Orange buttons for operations */
+            color: white;
+        }
+        .buttons button:nth-child(17) {
+            background-color: #ff7f50; /* Coral color for "=" button */
+            grid-column: span 2;
+            color: white;
+        }
+        .buttons button:nth-child(16) {
+            background-color: #ff7f50; 
+            color: white;
+        }
+        .buttons button {
+            background-color: #f0f0f0; /* Default button color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>*</button>
+        <button>0</button>
+        <button>.</button>
+        <button>AC</button>
+        <button>/</button>
+        <button>=</button>
+    </div>
+</div>
+</body>
+</html>

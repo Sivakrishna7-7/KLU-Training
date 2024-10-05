@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+   </style>
+</head>
+<body>
+    <table class="products">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>PRODUCT ID</th>
+                <th>PRODUCT NAME</th>
+                <th>PRODUCT COST</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>P101</td>
+                <td>Product_One</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>P102</td>
+                <td>Product_Two</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>P103</td>
+                <td>Product_Three</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>P104</td>
+                <td>Product_four</td>
+                <td>40000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>P105</td>
+                <td>Product_five</td>
+                <td>50000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

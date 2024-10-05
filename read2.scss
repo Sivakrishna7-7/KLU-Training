@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+        &__img{
+        flex: 1;
+        border: 5px solid red;
+        background-image: url("./RK.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+    &__text{
+        flex: 1;
+        border: 5px solid blue;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &__1{}
+        &__2{}
+        &__3{}
+        &__4{}
+    }
+}
